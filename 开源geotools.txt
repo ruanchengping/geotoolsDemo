@@ -1,0 +1,9 @@
+用这个环境可以进行geotools的开发，现在仅仅做的GIS属性查询，模糊查询，空间查询（相交，差异，联合等），缓存区分析。其他还可以支持WFS服务其他功能，WMS服务其他功能，但是没弄了
+eclipse环境
+geoserver提供图片引擎服务，geotools的开发提供空间分析服务(Java程序服务)，openlayer提供地图展现(javascript脚本)。
+安装一个geoserver服务器，发布好你想要查询与分析的图层。geoserver提供图片引擎服务，geotools的开发提供空间分析服务(Java程序服务)，openlayer提供地图展现(javascript脚本)。
+参考请求 接口：http://localhost:8081/tett/WFS?M=search&layername=ruancp:states&condition=STATE_NAME:Kansas
+layername参数为需要在缓存范围内查询的图层名称
+condition参数为过滤条件，可以加可以不加
+参数geometry传递缓存范围坐标序列,比如是一个圆形，多边形等
+
